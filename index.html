@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API IBGE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h3>API de Localidades</h3>
+    <div>
+        <form>
+            <label for="regiao" id="label">Região</label>
+            <select id="regiao" name="regiao">
+                <option>Selecione</option>
+            </select>
+
+            <label for="uf">UF</label>
+            <select id="uf" name="uf">
+                <option>Selecione</option>
+            </select>
+
+            <label for="municipio">Municípios</label>
+            <select id="municipio" name="municipio">
+                <option>Selecione</option>
+            </select>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+
+    <h4>Atividade 03</h4>
+    <div>
+        <p>
+            Coloque de forma dinâmica os combos de seleção para Região, UF e Municípios, todos devem consumir a API do
+            IBGE.<a href="https://servicodados.ibge.gov.br/api/docs/localidades">API IBGE</a>
+            <hr>
+        <ul>
+            <li>As opções Região e Uf podem vir preenchidas ao carregar a página pela primeira vez</li>
+            <li>A opção município só é carregada depois que uma UF é escolhida</li>
+            <li>Quando o usuário trocar alguma região as opções do município devem ser apagadas, para não correr o risco
+                de alguma seleção incorreta. </li>
+        </ul>
+        (Exemplo: Região> RJ, UF>SP, Município> São Paulo)
+        <br>
+        </p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
